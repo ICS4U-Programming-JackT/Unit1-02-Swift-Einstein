@@ -24,8 +24,9 @@ func main() {
             // Check if mass double is above zero
             if massDouble > 0 {
                     let energy = massDouble * pow(SpeedOfLight, 2)
+                    let energyFormatted = String(format: "%.3e", energy)
                     print("The energy released by your object "
-                    + "is \(energy) J (Joules)")
+                    + "is \(energyFormatted) J (Joules)")
             } else {
                 // Warn that input was not a positive number
                 print("Error: Mass must be a positive number.")
